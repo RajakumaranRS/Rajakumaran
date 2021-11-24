@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> Custom Radio</title>
+        <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: 'poppins',sans-serif;
+            }
+            body{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                height: 50%;
+            }
+            .card{
+                width : 300px;
+                height : 225px;
+                background: rgb(0,87,128);
+                position: relative;
+                border-radius: 20px;
+                cursor: pointer;
+                box-shadow: 0 0 50px rgba(0,0,0,0.143);
+            }
+            .card img{
+                position: absolute;
+                width : 100%;
+                border-radius: 10px;
+            }
+            .content{
+                position : absolute;
+                color : white;
+                width : 100%; height : 0px;
+                bottom : -100px; 
+                padding : 0.2em 1.5em;
+                font-size: 20px; background: rgba(255,255,255,0);
+                backdrop-filter: blur(0px);
+                border-radius: 10px; transform: scale(0.9);
+                border : 4px solid rgba(255,255,255,0);
+                box-shadow: 0 0 0px rgba(0,0,0,0.144);
+                overflow: hidden;
+                transition : all .4s;
+            }
+            .content p{
+                font-size: 0.8em;
+            }
+            .card:hover .content{
+                height : 250px;
+            }
+        </style>
+    </head>
+<body>
+        <div class="card">
+        <img src="cardimage.jpeg">
+        <div class="content">
+            <h2> Headings </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quae perspiciatis debitis quidem ex fugiat, qui quibusdam voluptas? Ipsa adipisci odit laborum 
+                esse dolorem pariatur quasi voluptas veniam libero asperiores!</p>
+        </div>
+        </div>  
+</body>
+</html>
